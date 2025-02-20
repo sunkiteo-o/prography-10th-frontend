@@ -10,7 +10,7 @@ import Move from "../components/common/Move";
 import FunnelLayout from "../layout/FunnelLayout";
 import useFunnel from "../hooks/useFunnel";
 
-const Funnel = ({ steps, nextClickHandler, Funnel, Step }) => {
+const Funnel = ({ steps, nextClickHandler }) => {
   const { Funnel, Step } = useFunnel(steps[0]);
   return (
     <FunnelLayout>
@@ -19,10 +19,10 @@ const Funnel = ({ steps, nextClickHandler, Funnel, Step }) => {
           <Agreement onNext={() => nextClickHandler(steps[1])} />
         </Step>
         <Step name="기본 정보">
-          <Agreement onNext={() => nextClickHandler(steps[2])} />
+          <PersonalInfo onNext={() => nextClickHandler(steps[2])} />
         </Step>
         <Step name="지원 정보">
-          <Agreement onNext={() => nextClickHandler(steps[3])} />
+          <ApplyInfo onNext={() => nextClickHandler(steps[3])} />
         </Step>
       </Funnel>
     </FunnelLayout>

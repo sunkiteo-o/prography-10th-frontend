@@ -2,15 +2,21 @@ import React from "react";
 import Question from "../../common/Question";
 import CheckBox from "../../common/CheckBox";
 
-const Agreement = ({ info }) => {
+const Agreement = () => {
   const agreement = {
     agree: "개인정보 수집 여부에 동의합니다.",
     disagree: "개인정보 수집 여부에 동의하지 않습니다.",
   };
 
+  const questions = {
+    question: "개인정보 수집 동의",
+    description:
+      "프로그라피 10기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다.",
+  };
+
   return (
     <div>
-      <Question info={info} />
+      <Question info={questions} />
       <div className="m-[20px] mt-[60px] ">
         <div className="flex flex-col">
           <div className="text-[20px] text-[#E1E3ED] font-medium pt-[10px]">

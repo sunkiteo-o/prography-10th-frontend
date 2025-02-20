@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Funnel from "../pages/Funnel";
 import DefaultLayout from "../layout/DefaultLayout";
 import FunnelLayout from "../layout/FunnelLayout";
+import ApplylPage from "../pages/ApplyPage";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/funnel",
-    element: <FunnelLayout />,
+    element: <ApplylPage />,
   },
 ]);
 

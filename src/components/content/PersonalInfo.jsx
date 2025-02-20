@@ -1,11 +1,16 @@
 import React from "react";
 import Question from "../common/Question";
 
-const PersonalInfo = ({ info }) => {
+const PersonalInfo = () => {
+  const questions = {
+    question: "기본 정보",
+    description: "연락 가능한 정보를 입력해주세요.",
+  };
+
   return (
     <div>
-      <Question info={info} />
-      <div className="m-[20px] mt-[60px] ">
+      <Question info={questions} />
+      <div className="m-[20px]  ">
         <div className="flex flex-col">
           <div className="text-[20px] text-[#E1E3ED] font-medium pt-[50px] pb-[30px]">
             성함을 입력해주세요
