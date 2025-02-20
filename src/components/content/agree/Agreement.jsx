@@ -20,7 +20,7 @@ const Agreement = () => {
       <div className="m-[20px] mt-[60px] ">
         <div className="flex flex-col">
           <div className="text-[20px] text-[#E1E3ED] font-medium pt-[10px]">
-            수집 목적: Prography 10rl 리크루팅 과정 및 결과 안내
+            수집 목적: Prography 10기 리크루팅 과정 및 결과 안내
           </div>
           <div className="text-[20px] text-[#E1E3ED] font-medium pt-[10px]">
             수집 항목: 이름, 이메일, 핸드폰 번호, 학교 정보 및 직장 정보

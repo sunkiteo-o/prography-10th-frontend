@@ -13,6 +13,7 @@ const Move = ({ onPrev, onNext }) => {
           뒤로
         </button>
         <button
+          type="submit"
           className="h-[50px] w-[100px] text-[20px] bg-[#E1E3ED] rounded-2xl"
           onClick={() => {
             onNext();

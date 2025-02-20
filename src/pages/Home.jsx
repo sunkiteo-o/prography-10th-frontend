@@ -5,7 +5,10 @@ import triangle_blue from "../assets/triangle_blue.png";
 import triangle_pink from "../assets/triangle_pink.png";
 import triangle_white from "../assets/triangle_white.png";
 import triangle_yellow from "../assets/triangle_yellow.png";
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <DefaultLayout>
       <Header />
@@ -99,7 +102,10 @@ const Home = () => {
           </div>
 
           <div className="flex py-[100px] items-center justify-center">
-            <button className="w-[300px] h-[100px] bg-prograpy rounded-full">
+            <button
+              className="w-[300px] h-[100px] bg-prograpy rounded-full"
+              onClick={() => navigate("/funnel")}
+            >
               <div className=" text-[30px] text-white  font-bold">지원하기</div>
             </button>
           </div>
