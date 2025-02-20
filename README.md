@@ -22,9 +22,15 @@
 ## 5. 설치 및 실행 방법
 
 - **설치**
+
+```bash
   git clone https://github.com/sunkiteo-o/prography-10th-frontend.git
   cd prography-10th-frontend
+```
 
 - **실행**
+
+```bash
   npm install
   npm run dev
+```
