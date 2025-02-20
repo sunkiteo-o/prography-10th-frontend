@@ -24,7 +24,7 @@ const ProgressBar = () => {
         <div className="flex justify-center items-center text-2xl w-[50px] h-[50px] text-white font-medium rounded-full bg-prograpy ">
           2
         </div>
-        <div className="w-[300px] h-[4px] bg-[#E1E3ED] mx-[20px]"></div>
+        <div className="w-[300px] h-[4px] bg-prograpy mx-[20px]"></div>
         <div className="flex justify-center items-center text-2xl w-[50px] h-[50px] text-white font-medium rounded-full bg-prograpy">
           3
         </div>

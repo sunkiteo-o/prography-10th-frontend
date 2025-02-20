@@ -9,9 +9,10 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+  const buttonText = "지원하기";
   return (
     <DefaultLayout>
-      <Header />
+      <Header buttonText={buttonText} />
       <div className="flex flex-col justify-center items-center w-full pt-[80px] overflow-scroll scrollbar-hide ">
         <div className="flex flex-col  w-[1140px] h-screen">
           <div className="py-[120px] mt-[100px] text-6xl text-white font-extrabold">
