@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import DefaultLayout from "../components/common/DefaultLayout";
 import logo from "../assets/logo.png";
 import ProgressBar from "../components/content/ProgressBar";
-import Agreement from "../components/content/Agreement";
+import Agreement from "../components/content/agree/Agreement";
 import ApplyInfo from "../components/content/ApplyInfo";
 import PersonalInfo from "../components/content/PersonalInfo";
 import CompleteApply from "../components/content/CompleteApply";
+import Move from "../components/common/Move";
 
 const Funnel = () => {
   const questions = {
@@ -15,16 +16,16 @@ const Funnel = () => {
         "프로그라피 10기 지원을 위한 개인정보 수집에 대한 동의가 필요합니다.",
     },
     applyInfo: {
-      question: "기본 정보",
-      description: "연락 가능한 정보를 입력해주세요.",
-    },
-    personalInfo: {
       question: "지원 정보",
       description: "지원하고자 하는 분야를 선택해주세요.",
     },
+    personalInfo: {
+      question: "기본 정보",
+      description: "연락 가능한 정보를 입력해주세요.",
+    },
   };
 
-  const [infoQuestion, setInfoQuestion] = useState(questions.agreement);
+  const [infoQuestion, setInfoQuestion] = useState(questions.personalInfo);
 
   return (
     <DefaultLayout>
@@ -40,16 +41,9 @@ const Funnel = () => {
         <ProgressBar />
 
         <div className="mx-[120px]">
-          <Agreement info={infoQuestion} />
+          <PersonalInfo info={infoQuestion} />
 
-          <div className="flex justify-between my-[100px]">
-            <button className="h-[50px] w-[100px] text-[20px] bg-[#E1E3ED] rounded-2xl">
-              뒤로
-            </button>
-            <button className="h-[50px] w-[100px] text-[20px] bg-[#E1E3ED] rounded-2xl">
-              다음
-            </button>
-          </div>
+          <Move />
         </div>
       </div>
     </DefaultLayout>

@@ -1,8 +1,13 @@
 import React from "react";
-import Question from "../common/Question";
-import CheckBox from "./agree/CheckBox";
+import Question from "../../common/Question";
+import CheckBox from "../../common/CheckBox";
 
 const Agreement = ({ info }) => {
+  const agreement = {
+    agree: "개인정보 수집 여부에 동의합니다.",
+    disagree: "개인정보 수집 여부에 동의하지 않습니다.",
+  };
+
   return (
     <div>
       <Question info={info} />
@@ -23,7 +28,8 @@ const Agreement = ({ info }) => {
             <span className="text-red-500"> *</span>
           </div>
 
-          <CheckBox />
+          <CheckBox content={agreement.agree} />
+          <CheckBox content={agreement.disagree} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Agreement from "../content/Agreement";
+import Agreement from "../content/agree/Agreement";
 import PersonalInfo from "../content/PersonalInfo";
 import ApplyInfo from "../content/ApplyInfo";
 import CompleteApply from "../content/CompleteApply";
