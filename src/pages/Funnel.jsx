@@ -24,6 +24,9 @@ const Funnel = ({ steps, nextClickHandler }) => {
         <Step name="지원 정보">
           <ApplyInfo onNext={() => nextClickHandler(steps[3])} />
         </Step>
+        <Step name="지원 완료">
+          <CompleteApply onNext={() => nextClickHandler(steps[4])} />
+        </Step>
       </Funnel>
     </FunnelLayout>
   );

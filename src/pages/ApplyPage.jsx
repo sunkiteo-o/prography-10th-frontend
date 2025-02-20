@@ -5,8 +5,9 @@ import Agreement from "../components/content/agree/Agreement";
 import Move from "../components/common/Move";
 import PersonalInfo from "../components/content/PersonalInfo";
 import ApplyInfo from "../components/content/ApplyInfo";
+import CompleteApply from "../components/content/CompleteApply";
 
-const steps = ["개인정보 수집 동의", "기본 정보", "지원 정보"];
+const steps = ["개인정보 수집 동의", "기본 정보", "지원 정보", "지원 완료"];
 
 const ApplyPage = () => {
   const { Funnel, Step, setStep, currentStep } = useFunnel(steps[0], steps);
@@ -28,6 +29,11 @@ const ApplyPage = () => {
         {currentStep === "지원 정보" && (
           <Step name="지원 정보">
             <ApplyInfo />
+          </Step>
+        )}
+        {currentStep === "지원 완료" && (
+          <Step name="지원 완료">
+            <CompleteApply />
           </Step>
         )}
       </Funnel>
