@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/common/Header";
-import DefaultLayout from "../components/common/DefaultLayout";
+import DefaultLayout from "../layout/DefaultLayout";
 import triangle_blue from "../assets/triangle_blue.png";
 import triangle_pink from "../assets/triangle_pink.png";
 import triangle_white from "../assets/triangle_white.png";
